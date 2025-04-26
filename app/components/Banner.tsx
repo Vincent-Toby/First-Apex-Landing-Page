@@ -4,11 +4,6 @@ import React, { useState } from "react";
 type Props = {};
 
 export default function Banner({}: Props) {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const handleMenu = () => {
-    setMenuOpen((prev) => !prev);
-  };
 
   return (
     <div className="h-[100dvh] landingpage-container flex items-center w-full">
