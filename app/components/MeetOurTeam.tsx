@@ -110,14 +110,14 @@ export default function MeetOurTeam() {
         {/* Staff cards */}
         <div
           ref={scrollRef}
-          className="flex gap-[16px] scroll-smooth sm:overflow-x-hidden overflow-x-auto px-[48px] hide-scrollbar"
+          className="flex gap-[16px] scroll-smooth px-[48px] overflow-x-auto hide-scrollbar"
         >
           {staff.map((staff) => (
             <div
               key={staff.id}
-              className="rounded-[8px] bg-white sm:min-w-[350px] min-w-7/9 overflow-hidden"
+              className="rounded-[8px] bg-white sm:min-w-[350px] min-w-7/9 overflow-hidden sm:shadow-none shadow-xl"
             >
-              <img src={staff.image} alt="" className="object-cover h-[320px]" />
+              <img src={staff.image} alt="" className="object-cover sm:h-[320px] h-[200px]" />
               <div className="px-[16px] py-[24px] flex flex-col gap-[8px]">
                 <h3 className="text-[18px] capitalize">
                   {staff.name}

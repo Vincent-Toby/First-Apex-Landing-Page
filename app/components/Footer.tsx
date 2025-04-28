@@ -7,10 +7,9 @@ function Footer({}: Props) {
     <footer className="bg-[#093B3B] px-[70px] py-[50px]">
       <div className="flex sm:flex-row flex-col items-start gap-[40px] justify-between border-b border-gray-400 pb-[60px]">
         <div className="flex flex-col items-start justify-center gap-[8px]">
-          <h3 className="text-white text-[25px] font-[600]">First Apex</h3>
+          <h3 className="text-white text-[33px] font-[600]">First Apex</h3>
           <p className="max-w-[250px] text-gray-300">
-            join now to recieve personalized recommondations from the full
-            Coursera catalog.
+            vistt any of our social media platforms for enquiry and more <br />24hr reply guaranteed.
           </p>
           <div className="flex gap-[10px] mt-[10px]">
             <div className="rounded-full bg-[#125f5f]/80">

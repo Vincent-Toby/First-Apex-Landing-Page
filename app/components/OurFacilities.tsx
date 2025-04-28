@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-type Tab = "Play Ground" | "Laboratory" | "Classrooms" | "Sports" | "I.C.T" | "Art";
+type Tab = "Playground" | "Laboratory" | "Classrooms" | "Sports" | "I.C.T" | "Art";
 
 type Card = {
   id: number;
@@ -11,7 +11,7 @@ type Card = {
 };
 
 const tabs: Tab[] = [
-  "Play Ground",
+  "Playground",
   "Laboratory",
   "Classrooms",
   "Sports",
@@ -36,7 +36,7 @@ const cards: Card[] = [
     id: 3,
     title: "Merry-Go-Round",
     image: "images/merry-go-round.jpg",
-    category: "Play Ground",
+    category: "Playground",
   },
   {
     id: 4,
@@ -72,7 +72,7 @@ const cards: Card[] = [
     id: 9,
     title: "Fun Area",
     image: "images/playground.jpg",
-    category: "Play Ground",
+    category: "Playground",
   },
   {
     id: 10,
@@ -89,7 +89,7 @@ const cards: Card[] = [
 ];
 
 export default function OurFacilities() {
-  const [activeTab, setActiveTab] = useState<Tab>("Play Ground");
+  const [activeTab, setActiveTab] = useState<Tab>("Playground");
 
   const filteredCards = cards.filter((card) => card.category === activeTab);
 
@@ -100,7 +100,7 @@ export default function OurFacilities() {
       </h2>
 
       {/* tabs */}
-      <div className="flex gap-[16px] md:gap-[24px] border-b border-gray-300 mb-6 overflow-x-auto scrollbar-hide">
+      <div className="flex gap-[16px] md:gap-[24px] border-b border-gray-300 mb-6 overflow-x-auto hide-scrollbar">
         {tabs.map((tab) => (
           <button
             key={tab}
@@ -111,7 +111,7 @@ export default function OurFacilities() {
             }`}
             onClick={() => setActiveTab(tab)}
           >
-            {tab}
+            {tab.slice(0, 10)}
           </button>
         ))}
       </div>
@@ -121,7 +121,7 @@ export default function OurFacilities() {
         {filteredCards.map((card) => (
           <div
             key={card.id}
-            className="bg-white rounded-[16px] cursor-pointer hover:shadow-xl overflow-hidden transition-all duration-300 hover:scale-[103%]"
+            className="bg-white rounded-[16px] cursor-pointer hover:shadow-xl overflow-hidden transition-all duration-300 hover:scale-[103%] sm:shadow-none shadow-xl"
           >
             <img
               src={card.image}

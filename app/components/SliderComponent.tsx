@@ -65,7 +65,7 @@ export const SliderComponent = () => {
   const currentActivity = activity[currentIndex];
 
   return (
-    <div className="landingpage-container py-[80px] h-[100dvh] relative">
+    <div className="landingpage-container py-[80px] md:h-[100dvh] h-[500px] relative">
       {/* Left arrow */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ export const SliderComponent = () => {
       </svg>
 
       <div className="relative h-full">
-        <div className="inset-0 absolute flex flex-col gap-[40px] items-start justify-between z-10 bg-[#093B3B]/70 h-full p-[24px] md:px-[40px] py-[80px] rounded-2xl text-white">
+        <div className="inset-0 absolute flex flex-col gap-[40px] items-start justify-between z-10 bg-[#093B3B]/60 h-full p-[24px] md:px-[40px] py-[80px] rounded-2xl text-white">
           <div>
             <h2 className="text-2xl md:text-4xl font-bold mb-4">
               {currentActivity.title}

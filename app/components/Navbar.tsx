@@ -68,7 +68,7 @@ export default function Navbar({}: Props) {
           {/* Close Hamburger btn */}
           <div
             onClick={() => setMenuOpen(false)}
-            className="absolute top-5 right-5 text-4xl cursor-pointer"
+            className="absolute top-5 right-5 text-[44px] cursor-pointer text-red-500"
           >
             &times;
           </div>
@@ -80,21 +80,21 @@ export default function Navbar({}: Props) {
               href={"#facilities"}
               className="text-black text-[16px]"
             >
-              Courses
+              Our Facilities
             </Link>
             <Link
               onClick={() => setMenuOpen(false)}
               href={"#staff"}
               className="text-black text-[16px]"
             >
-              Pages
+              Staff
             </Link>
             <Link
               onClick={() => setMenuOpen(false)}
               href={"#testimonial"}
               className="text-black text-[16px]"
             >
-              About Us
+              Testimonials
             </Link>
             <button className="bg-[#093B3B] h-max text-sm px-[16px] py-[8px] rounded-full text-[#fff] cursor-pointer flex items-center justify-center">
               Contact Us
